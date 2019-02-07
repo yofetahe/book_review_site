@@ -1,0 +1,103 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="container">
+
+        <div class="slide">
+            <img src="../static/image/pub_adv_3.jpg" alt="book_add">
+            <div class="signup_form">
+                <p>Sign up to be active in our book review community.</p>
+                <a href="{{ url_for('signup') }}">SIGN UP</a>
+            </div>
+        </div>
+
+        <p class="block_title">Latest Publication</p>
+        <div class="latest_publication">            
+            <div class="publications">
+                <img src="../static/image/latest_pub_1.gif" alt="cover">
+                <p>This book is the best book ever. Every body must read it. It gives a good experience.</p>
+            </div>
+            <div class="separetor"></div>
+            <div class="publications">
+                <img src="../static/image/latest_pub_2.jpg" alt="cover">
+                <p>This book is the best book ever. Every body must read it. It gives a good experience.</p>
+            </div>
+            <div class="separetor"></div>
+            <div class="publications">
+                <img src="../static/image/latest_pub_3.jpg" alt="cover">
+                <p>This book is the best book ever. Every body must read it. It gives a good experience.</p>
+            </div>
+            <div class="separetor"></div>
+            <div class="publications">
+                <img src="../static/image/latest_pub_4.jpg" alt="cover">
+                <p>This book is the best book ever. Every body must read it. It gives a good experience.</p>
+            </div>            
+        </div>
+        <a class="block_button" href="{{ url_for('publication_list') }}">[ View More Latest Publication ]</a>
+        
+        <div class="publication_category">
+            <div class="publication_cat_title">
+                <a href="" class="active">fiction ></a>
+                <a href="">nonfiction</a>
+                <a href="">children's</a>
+                <a href="">teen</a>
+                <a href="">mystrey</a>
+                <a href="">romance</a>
+            </div>
+            <div class="publication_per_category">
+                <div class="books_info">
+                    <img src="../static/image/cat_book_4.jpg" alt="book_cover">
+                    <div class="book_desc">
+                        <h3>The Lives Inside Your Head</h3>
+                        <p>Megan Collins</p>
+                        <p>Jan 10, 2019</p>
+                        <a href="#">READ REVIEW</a>
+                    </div>
+                </div>
+                <div class="books_info">
+                    <img src="../static/image/cat_book_1.jpg" alt="book_cover">
+                    <div class="book_desc">
+                        <h3>The Lives Inside Your Head</h3>
+                        <p>Megan Collins</p>
+                        <p>Jan 10, 2019</p>
+                        <a href="#">READ REVIEW</a>
+                    </div>
+                </div>
+                <div class="books_info">
+                    <img src="../static/image/cat_book_2.jpg" alt="book_cover">
+                    <div class="book_desc">
+                        <h3>The Lives Inside Your Head</h3>
+                        <p>Megan Collins</p>
+                        <p>Jan 10, 2019</p>
+                        <a href="#">READ REVIEW</a>
+                    </div>
+                </div>
+                <div class="books_info">
+                    <img src="../static/image/cat_book_3.jpg" alt="book_cover">
+                    <div class="book_desc">
+                        <h3>The Lives Inside Your Head</h3>
+                        <p>Megan Collins</p>
+                        <p>Jan 10, 2019</p>
+                        <a href="#">READ REVIEW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="block_title">Most Viewed Publications</p>
+        <div class="most_viewed_publication">
+            <div class="most_viewed"></div>
+            <div class="most_viewed"></div>
+            <div class="most_viewed"></div>
+            <div class="most_viewed"></div>
+            <div class="most_viewed"></div>
+            <div class="most_viewed"></div>
+            <div class="most_viewed"></div>
+            <div class="most_viewed"></div>
+            <div class="most_viewed"></div>
+            <div class="most_viewed"></div>            
+        </div>
+        <a href="{{ url_for('publication_list') }}" class="block_button">[ View More ]</a>
+
+    </div>
+{% endblock %}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BookReview</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=open+Sans:300,400,600">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div id="header">
+
+        <div class="container">
+            <div id="web_logo">
+                <img src="../static/image/web_logo.png" alt="logo">
+                <span>Book Review</span>
+            </div>
+            <div id="header_right">
+                {% if session['email'] %}
+                    Login as - {{ session['email'] }} |
+                    <a href="{{ url_for('logout') }}" class="logout-link">SIGN OUT</a>
+                {% else %}					
+                    <a href="{{ url_for('login') }}" class="logout-link">LOGIN</a>
+                {% endif %}
+            </div>
+        </div>
+
+    </div>
+    {% block content %}
+
+    {% endblock %}
+    <div class="footer">
+        <div class="container">
+            footer
+        </div>
+    </div>
+</body>
+</html>

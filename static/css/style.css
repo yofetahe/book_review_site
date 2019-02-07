@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    /* outline: 1px red solid; */
+}
+  
+body {
+    background-color: #f4f4f4;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* header */
+#header {
+    background-color: #fff;
+    padding: 15px 0px;
+    min-height: 50px;
+    box-shadow:  0px 2px 5px silver;
+    margin-bottom: 10px;
+}
+div.container{
+    width: 1070px;
+    margin: 0 auto;
+}
+div#web_logo{
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    text-align: center;
+}
+    div#web_logo img{
+        width: 176px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+div#header_right {
+    display: inline-block;
+    width: 79.5%;
+    height: auto;
+    text-align: right;
+    font-size: 12px;
+}
+    div#header_right a{
+        text-decoration: none;
+    }
+
+/* body */
+div.slide{
+    height: 200px;
+    background-color: antiquewhite;
+}
+    div.slide img{
+        width: auto;
+        height: 100%;
+        background-size: cover;
+        display: inline-block;
+    }
+    div.slide div.signup_form{
+        display: inline-block;
+        height: auto;
+        width: 300px;
+        vertical-align: top;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: italic;
+    }
+        div.slide div.signup_form a{
+            padding: 5px 30px;
+            cursor: pointer;
+            height: 35px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+p.block_title{
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(59, 59, 59);
+    padding: 15px 0px;
+    border-bottom: 1px solid rgb(124, 124, 124);
+    margin-bottom: 5px;
+}
+a.block_button{
+    font-size: 13px;
+    color: rgb(59, 59, 59);
+    cursor: pointer;    
+    padding: 15px 0px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+div.latest_publication{
+    padding-top: 10px;
+    margin: 0px;
+}
+    div.separetor{
+        display: inline-block;
+        width: 2%;
+    }
+    div.publications{
+        width: 244.5px;
+        height: 400px;
+        background-color: white;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        /* border: 1px white solid; */
+    }
+        div.publications img{
+            height: auto;
+            width: 244.5px;
+            position: absolute;
+        }
+        div.publications p{
+            position: absolute;
+            z-index: 10px;
+            background: rgba(255, 255, 255, 0.99);
+            bottom: 0;
+            text-align: center;
+            padding: 16px 2px;
+            font-size: 14px;
+            font-style: italic;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 20px;
+            box-shadow: 0px -8px 13px #888;
+        }
+
+div.publication_category{
+    text-align: center;
+    margin: 0px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 15px 0px;
+}
+
+    div.publication_category div.publication_cat_title{
+        display: inline-block;
+        vertical-align: top;
+        list-style: none;
+        width: 10%;
+    }
+        div.publication_cat_title p{
+            font-size: 15px;
+            font-weight: bold;
+            width: 100%;
+            text-align: left;
+        }
+        div.publication_cat_title a{
+            display: block;
+            width: 100%;
+            text-align: left;
+            font-size: 13px;
+            text-decoration: none;
+            color: rgb(80, 80, 80);
+            line-height: 25px;
+            font-variant: small-caps;
+        }
+        div.publication_cat_title a.active{
+            background-color: silver;
+            color: white;
+        }
+    div.publication_per_category{
+        display: inline-block;
+        width: 85.5%;
+        margin: 0px auto;
+    }
+        div.books_info{
+            display: inline-block;
+            width: 223px;
+            height: 144px;
+            border: 1px solid rgb(129, 129, 129);
+        }
+            div.books_info img{
+                display: inline-block;
+                width: auto;
+                height: 144px;
+                vertical-align: top;
+            }
+            div.books_info div.book_desc{
+                display: inline-block;
+                width: 110px;
+                height: auto;
+            }
+                div.books_info div.book_desc h3{
+                    font-size: 18px;
+                    font-style: italic;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+                div.books_info div.book_desc p{
+                    font-size: 13px;
+                }
+                div.books_info div.book_desc a{
+                    font-size: 10px;
+                }
+
+div.most_viewed_publication{
+    display: block;
+}
+    div.most_viewed_publication div.most_viewed{
+        display: inline-block;
+        height: 200px;
+        width: 210px;
+        background-color: black;
+    }
+
+div.footer{
+    min-height: 30px;
+    border-top: rgb(112, 112, 112) 1px solid;
+    padding-top: 15px;
+}
